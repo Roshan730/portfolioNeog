@@ -1,4 +1,3 @@
-// import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./nav/Nav";
 import About from "./about/About";
