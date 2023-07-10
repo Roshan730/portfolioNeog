@@ -1,10 +1,10 @@
 import "../styles/background.css";
-// import video from "../assets/video.mp4";
+import video from "../assets/bg-universe.mp4";
 import fallbackImage from "../assets/fallback-image.jpg";
 
 const Background = () => {
 	return (
-		<div>
+		<>
 			<div className="shadow-overlay"></div>
 			<video
 				playsInline
@@ -14,8 +14,10 @@ const Background = () => {
 				preload="auto"
 				id="bg"
 				poster={fallbackImage}
-			></video>
-		</div>
+			>
+				<source src={video} type="video/mp4" />
+			</video>
+		</>
 	);
 };
 
